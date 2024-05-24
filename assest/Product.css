@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.header-items{
+    display: flex;
+    width: 100%;
+    height: max-content;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 0;
+
+    .products-title{
+        color: white;
+        font-size: 3em;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;   
+    }
+    button{
+        height: 5vh;
+        width: 10vw;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        z-index: 1;
+    }
+}
+
+.background-left{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 35vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.background-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: maroon; */
+    width: 65vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+
+.product-section{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    padding: 5vh 5vw;
+}
+
+.img-div{
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    top: 23vh;
+    left: 10vw;
+    display: inline-block;
+    padding: 20px;
+
+    .product-img-container{
+        width: 100%;
+        height: 100%;
+        img{
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.product-name-container{
+    position: absolute;
+    display: flex;
+    width: 35vw;
+    height: auto;
+    flex-direction: column;
+    right: 10vw;
+    top: 20vh;
+    padding: 10px;
+
+    h4{
+        font-size: 4em;
+        color: white;
+        margin-bottom: 10vh;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    p{
+        font-size: 1.2em;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+}
+
+.social-link{
+    position: absolute;
+    bottom: 10vh;
+    left: 3vw;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    ion-icon{
+        color: white;
+        cursor: pointer;
+        z-index: 1;
+        font-size: 1.2em;
+
+        &:hover{
+            color: blueviolet;
+        }
+    }
+}
+
+.swap-btn{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 0;
+    top: 40vh;
+    padding: 0vh 5vw;
+    z-index: 1;
+
+    button{
+        width: 2vw;
+        height: 3vh;
+        font-size: 1.3em;
+        background-color: transparent;
+        border: none;
+
+        ion-icon{
+            font-size: 1.5em;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}
