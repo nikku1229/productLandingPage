@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assest/Product.css">
+    <title>Product</title>
+</head>
+<body>
+    <section class="product-section">
+        <div class="header-items">
+            <h1 class="products-title" id="products-page"></h1>
+            <button type="submit">Book now</button>
+        </div>
+        <div class="background-left"></div>
+        <div class="background-right" id="back-color"></div>
+        <div class="img-div">
+            <div class="product-img-container" id="img-div">
+                <!-- <img src="./assest/Image/Product3-img4.png" alt=""> -->
+            </div>
+        </div>
+        <div class="product-name-container">
+            <h4 id="product-title"></h4>
+
+            <p id="para"></p>
+        </div>
+
+        <div class="social-link">
+            <ion-icon name="logo-linkedin"></ion-icon>
+            <ion-icon name="logo-facebook"></ion-icon>
+            <ion-icon name="logo-twitter"></ion-icon>
+        </div>
+
+        <div class="swap-btn">
+            <button type="button" onclick="backward()"><ion-icon name="chevron-back-circle-outline"></ion-icon></button>
+            <button type="button" onclick="forward()"><ion-icon name="chevron-forward-circle-outline"></ion-icon></button>
+        </div>
+    </section>
+
+    <!-- Js link -->
+    <script src="./assest/productscript.js"></script>
+
+
+    <!-- Icon link -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
